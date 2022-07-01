@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Card validation</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=Roboto:wght@500&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="body">
+    <div class="Container">
+      <h2>Método de pago</h2>
+      <h4 class="title">Agrega los detalles de la tarjeta de crédito</h4>
+      <img src="Images/card.png" width="350" />
+    </div>
+
+    <!-- Formulario-->
+    <div>
+      <form class="card form">
+        <div>
+          <label for="inputNumber"> Número de tarjeta</label>
+        </div>
+        <input type="text" id="inputNumber" maxlength="16" autocomplete="off" />
+      </form>
+    </div>
+    <br>
+    <div class="button">
+      <button type="button"> SIGUIENTE</button>
+    </div>
     <script src="index.js" type="module"></script>
-  </body>
+  </div>
+</body>
+
 </html>

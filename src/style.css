@@ -1,0 +1,49 @@
+.body h2 {
+
+  font-family: 'PT Sans', sans-serif;
+  color: rgba(0, 0, 0, 1);
+  padding: 20;
+  margin: 2cm;
+  text-align: left;
+
+}
+
+h4 {
+  font-family: 'Roboto', sans-serif;
+  color: rgba(66, 57, 57, 0.6);
+}
+
+.group card-form,
+input {
+  border: 2px solid #5D6BE9;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  height: 28px;
+  width: 25%;
+  padding: 7px 10px;
+  border-radius: 7px;
+}
+
+.group label,
+form {
+  text-align: left;
+  margin-bottom: 20;
+  font-family: 'Roboto', sans-serif;
+  color: rgba(66, 57, 57, 0.6);
+  font-size: small;
+}
+
+.button button {
+  width: 10%;
+  height: 35px;
+  display: block;
+  margin: 0.5;
+  padding: 10px;
+  font: size 25px;
+  color: #fff;
+  background-color: rgba(93, 107, 233, 0.99);
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+}
