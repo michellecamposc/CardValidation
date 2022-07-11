@@ -1,28 +1,18 @@
 import validator from "./validator.js";
 
-// Llamar al input desde html
-function creditCardChanges() {
-  const cardNumberInput = document.getElementById("card-number");
-  console.log(cardNumberInput);
-  cardNumberInput.addEventListener("input", verify);
+// Llamar al input desde html y validar tarjeta
+function verifyCard() {
+  const creditCardNumber = document.getElementById("card-number").value;
+  //Si la tarjeta tiene menos de 16 caracteres
+  if (creditCardNumber.length < 16) {
+    alert("Faltan números de la tarjeta");
+    //Si la tarjeta es válida
+  } else if (validator.isValid(creditCardNumber) === true) {
+    alert("Tarjeta de crédito válida✅");
+    //Si la tarjeta es inválida
+  } else validator.isValid(creditCardNumber) === false;
+  alert("Tarjeta de crédito inválida❌");
 }
 
-// Verificar
-function verify(event) {
-  console.log(event);
-  const value = event.srcElement.value;
-  console.log(value);
-  const isValid = validator.isValid(value);
-  const messageHtml = document.getElementById("message");
-
-  if (isValid) {
-    messageHtml.style.color = "seagreen";
-    messageHtml.innerText =
-      "✅ Tarjeta de crédito válida " + validator.maskify(value);
-  } else {
-    messageHtml.style.color = "red";
-    messageHtml.innerText = "❌ Tarjeta no válida";
-  }
-}
-
-creditCardChanges();
+const buttonValidation = document.getElementById("button-validation");
+buttonValidation.addEventListener("click", verifyCard);

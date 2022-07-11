@@ -1,6 +1,6 @@
 const validator = {
   isValid: function (creditCardNumber) {
-    const creditCardNumbersList = creditCardNumber
+    let creditCardNumbersList = creditCardNumber
       .split("")
       .reverse()
       .map((x) => +x);
@@ -11,15 +11,15 @@ const validator = {
       0
     );
     sum += lastDigit;
-    return sum % 10 === 0 ? true : false;
+    if (sum % 10 === 0) {
+      return true;
+    } else return false;
   },
 
-  /**
-   * Returns all the characters except the last four, whose are replaced by a cat emoji (🐱)
-   * Should always keep the last four characters, even when the creditCardNumber param is shorter
-   */
+  // Ocular los caracteres excepto los ultimos 4 dígitos
   maskify: function (creditCardNumber) {
     let masked = "";
+    masked = document.getElementById(creditCardNumber);
     for (let i = 0; i < creditCardNumber.length; i++) {
       if (i < creditCardNumber.length - 4) masked += "🐱";
       else masked += creditCardNumber[i];
@@ -30,11 +30,3 @@ const validator = {
 };
 
 export default validator;
-
-/**
- * console.log(validator.isValid("5181975718047403")); // === true
- * console.log(validator.maskify("5181975718047403")); // === '🐱🐱🐱🐱🐱🐱🐱🐱🐱🐱🐱🐱7403'
- * console.log(validator.maskify("75718047403")); // === '🐱🐱🐱🐱🐱🐱🐱7403'
- * console.log(validator.maskify("3")); // === '3'
- * console.log(validator.maskify("")); // === ''
- */

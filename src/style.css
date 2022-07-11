@@ -8,6 +8,11 @@ h4 {
   color: rgba(66, 57, 57, 0.6);
 }
 
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: small;
+}
+
 .container {
   margin: auto;
   margin-top: 60px;

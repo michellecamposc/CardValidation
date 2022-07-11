@@ -1,45 +1,42 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <meta charset="UTF-8">
-  <title>Card validation</title>
-  <link rel="stylesheet" href="style.css" />
-  <!-- Font awesome para añadir iconos a tu input-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+  <head>
+    <meta charset="UTF-8">
+    <title>Card validation</title>
+    <link rel="stylesheet" href="style.css" />
+   <!-- Font awesome para añadir iconos a tu input-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- Google fonts, agrega las fuentes deseadas-->
-  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=Roboto:wght@500&display=swap"
+    <!-- Google fonts, agrega las fuentes deseadas-->
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=Roboto:wght@500&display=swap"
     rel="stylesheet">
-</head>
+ </head>
 
-<body>
-  <div class="container">
-    <h2>Método de pago</h2>
-    <h4 class="title">Agrega los detalles de la tarjeta de crédito</h4>
-    <br>
-    <img src="Images/card.png" width="320" />
+ <body>
+   <div class="container"> 
+     <h2>Método de pago</h2>
+     <h4 class="title">Agrega los detalles de la tarjeta de crédito</h4>
+     <br>
+     <img src="Images/card.png" width="320" />
 
-    <!-- Formulario-->
-    <form class="form" id="form">
-      <br>
-      <div class="label">
-        <label for="card-number"> Número de tarjeta</label>
-      </div>
-      <div class="input">
-        <input type="password" class="icon" id="card-number" maxlength="16" placeholder="" />
-      </div>
-    </form>
-
-    <p id="message" style="color: red;"></p>
-
-    <div class="button">
-      <button type="button" >SIGUIENTE</button>
-    </div>
+     <!-- Formulario-->
+     <form class="form" id="form" action="">
+        <div class="label">
+          <label for="number"> Número de tarjeta</label>
+        </div>
+        <div class="card-input">
+          <input type="text" class="icon" id="card-number" maxlength="16" placeholder="" />
+        </div>
+          <br>
+        <div class="button">
+          <button type="button" id="button-validation">VALIDAR</button>
+        </div> 
+      </form>
+    </div>   
     <script src="index.js" type="module"></script>
-    <script src="validator.js"></script>
-  </div>
-</body>
-
+  </body>
 </html>
+
+
