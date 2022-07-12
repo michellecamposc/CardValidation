@@ -27,8 +27,9 @@
           <label for="number"> Número de tarjeta</label>
         </div>
         <div class="card-input">
-          <input type="text" class="icon" id="card-number" maxlength="16" placeholder="" />
+          <input type="text" onkeypress="return event.charCode >= 48 && event.charCode <= 57" class="icon" id="card-number" maxlength="16" placeholder="" />
         </div>
+          <br>
           <br>
         <div class="button">
           <button type="button" id="button-validation">VALIDAR</button>
