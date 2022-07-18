@@ -1,0 +1,69 @@
+h2 {
+  font-family: 'PT Sans', sans-serif;
+  color: rgba(5, 5, 5, 0.794)
+}
+
+h4 {
+  font-family: 'Roboto', sans-serif;
+  color: rgba(66, 57, 57, 0.6);
+}
+
+.container {
+  margin: auto;
+  margin-top: 100px;
+  margin-left: 550px;
+}
+
+.input card-number,
+input {
+  border: 2px solid #5D6BE9;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  height: 28px;
+  width: 35%;
+  padding: 7px 10px;
+  border-radius: 7px;
+  color: rgba(5, 5, 5, 0.794)
+}
+
+.label label,
+form {
+  text-align: left;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  font-family: 'Roboto', sans-serif;
+  color: rgba(66, 57, 57, 0.6);
+}
+
+.label {
+  line-height: 0.8cm;
+  font-size: small;
+}
+
+.button button {
+  width: 16%;
+  height: 40px;
+  margin-left: 90px;
+  padding: 10px;
+  font-size: 14px;
+  color: #fff;
+  background-color: rgba(93, 107, 233, 0.99);
+  border: none;
+  border-radius: 6px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.icon {
+  content: "\f0c8";
+  text-align: initial;
+}
+
+.icon::placeholder {
+  font-weight: 900;
+  font-family: "Font Awesome 6 Free";
+  color: rgba(137, 136, 136, 0.79);
+}
+
+.card{
+  width: 300px
+}
