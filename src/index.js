@@ -6,7 +6,7 @@ function verifyCard() {
   //Si la tarjeta tiene menos de 16 caracteres
   if (creditCardNumber.length < 16) {
     MaskedCC();
-    alert("Faltan números de la tarjeta");
+    alert("Faltan números de la tarjeta" + validator.maskify(creditCardNumber));
     //Si la tarjeta es válida
   } else if (validator.isValid(creditCardNumber) === true) {
     MaskedCC();
@@ -32,6 +32,7 @@ const buttonValidation = document.getElementById("button-validation");
 buttonValidation.addEventListener("click", verifyCard);
 
 //Solo acepta valores numéricos
+
 function justNumber(event) {
   if (event.charCode >= 48 && event.charCode <= 57) {
     return true;

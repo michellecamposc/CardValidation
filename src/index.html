@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
   <head>
     <meta charset="UTF-8">
@@ -19,12 +19,12 @@
      <h2>Método de pago</h2>
      <h4 class="title">Agrega los detalles de la tarjeta de crédito</h4>
      <br>
-     <img src="Images/card.png" width="320" />
+     <img src="Images/card.png" class="card"/>
 
      <!-- Formulario-->
      <form class="form" id="form" action="">
         <div class="label">
-          <label for="number"> Número de tarjeta</label>
+          <label for="card-number"> Número de tarjeta</label>
         </div>
         <div class="card-input">
           <input type="text" onkeypress="return event.charCode >= 48 && event.charCode <= 57" class="icon" id="card-number" maxlength="16" placeholder="" />
@@ -35,6 +35,7 @@
           <button type="button" id="button-validation">VALIDAR</button>
         </div> 
       </form>
+
     </div>   
     <script src="index.js" type="module"></script>
   </body>

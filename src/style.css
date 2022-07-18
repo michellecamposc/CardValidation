@@ -63,3 +63,7 @@ form {
   font-family: "Font Awesome 6 Free";
   color: rgba(137, 136, 136, 0.79);
 }
+
+.card{
+  width: 300px
+}
