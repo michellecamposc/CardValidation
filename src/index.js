@@ -16,7 +16,7 @@ function verifyCard() {
     MaskedCC();
     alert(
       "Tarjeta de crédito inválida❌" + validator.maskify(creditCardNumber)
-    );
+    )
   }
 }
 
@@ -39,3 +39,4 @@ function justNumber(event) {
   }
   return false;
 }
+justNumber
