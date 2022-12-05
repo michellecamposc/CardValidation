@@ -22,34 +22,34 @@ Se mostrará un mensaje "Número de tarjeta válido" de haber ingresado los dato
 
 A continuación se presentan 4 prototipos de baja fidelidad hechos en papel y a mano, se tomó el feedback correspodiente y se realizaron modificaciones para ser mostradas en el prototipo de alta fidelidad.
 
-<img src="Images/prototipobaja.jpg" alt="prototipo-baja" width="550px" height=400px/>
+<img src="./src/images/prototipobaja.jpg" alt="prototipo-baja" width="550px" height=400px/>
 
 ## 2. Prototipo de alta fidelidad
 
 En este prototipo de alta fidelidad podemos ver las modificaciones finales y detalles estéticos,como son los colores, tipo de letra y mensajes que podrá observar el usuario al momento de validar su tarjeta.
 
-<img src="Images/prototipoalta.png" alt="prototipo-alta" width="700px" height=500px/>
+<img src="./src/images/prototipoalta.png" alt="prototipo-alta" width="700px" height=500px/>
 
 ## 2. Versión terminada y funcional del prototipo
 
 La versión final del prototipo creada con HTML, CCS y javaScript. Se mantuvo fiel al diseño inicial, sin embargo se cambió la forma en como aparece "tarjeta válida" y "tarjeta inválida" por un alert, también puede ser visible la funcionalidad de maskify.
 
-<img src="Images/versionfinal.png" alt="version-final" width="400px" height=500px/>
+<img src="./src/images/versionfinal.png" alt="version-final" width="400px" height=500px/>
 
 ## Tarjeta de crédito válida
 
 Muestra un alert con el mensaje de "tarjeta de crédito válida" y los números de la tarjeta ocultos.
 
-<img src="Images/validcard.png" alt="tarjeta-válida" width="550px" height=300px/>
+<img src="./src/images/validcard.png" alt="tarjeta-válida" width="550px" height=300px/>
 
 ## Tarjeta de crédito inválida
 
 Muestra un alert con el mensaje de "tarjeta de crédito inválida" y los números de la tarjeta ocultos.
 
-<img src="Images/invalidcard.png" alt="tarjeta-inválida" width="400px" height=500px/>
+<img src="./src/images/invalidcard.png" alt="tarjeta-inválida" width="400px" height=500px/>
 
 ## Tarjeta de crédito incompleta
 
 Muestra un alert con el mensaje de "Faltan números de la tarjeta" y los números de la tarjeta ocultos.
 
-<img src="Images/incompleto.png" alt="tarjeta-incompleta" width="400px" height=550px/>
+<img src="./src/images/incompleto.png" alt="tarjeta-incompleta" width="400px" height=550px/>
